@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="/toddo/index.css">
 
 <body>
     <h1>Social Media</h1>
@@ -21,30 +22,37 @@
                 <div id="msg"></div>
                 <button type="submit">Post</button>
             </form>
+
         </div>
         <div class="right">
             <h3>Your notes here</h3>
-            <div id="posts"></div>
+            <div id="posts">
+                <!-- <div>
+                        <p>Hello world post 1</p>
+                        <span class="options">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
+            
+                    <div>
+                        <p>Hello world post 2</p>
+                        <span class="options">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </div> -->
+                    
+                <i onClick="editPost(this)"></i>
+
+                <i onClick="deletePost(this)"></i>
+
+            </div>
         </div>
     </div>
 
-    <div id="posts">
-        <div>
-            <p>Hello world post 1</p>
-            <span class="options">
-                <i class="fas fa-edit"></i>
-                <i class="fas fa-trash-alt"></i>
-            </span>
-        </div>
 
-        <div>
-            <p>Hello world post 2</p>
-            <span class="options">
-                <i class="fas fa-edit"></i>
-                <i class="fas fa-trash-alt"></i>
-            </span>
-        </div>
-    </div>
 </body>
 
 </html>
+<script src="/toddo/index.js"></script>
