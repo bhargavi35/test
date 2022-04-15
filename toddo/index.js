@@ -3,6 +3,7 @@ let input = document.getElementById("input");
 let msg = document.getElementById("msg");
 let posts = document.getElementById("posts");
 
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("button clicked");
@@ -48,3 +49,4 @@ let editPost = (e) => {
 let deletePost = (e) => {
   e.parentElement.parentElement.remove();
 };
+
